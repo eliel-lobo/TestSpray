@@ -35,6 +35,6 @@ Seq(Revolver.settings: _*)
 
 assemblySettings
 
-mainClass in assembly := Some("com.example.Boot")
+mainClass in assembly := Some("com.sura.seguros.core.configurador.conceptos.boot.Boot")
 
-mainClass in Revolver.reStart := Some("com.example.Boot")
+mainClass in Revolver.reStart := Some("com.sura.seguros.core.configurador.conceptos.boot.Boot")

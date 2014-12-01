@@ -1,12 +1,14 @@
-package com.example
+package com.sura.seguros.core.configurador.conceptos.boot
 
 import akka.actor.{ActorSystem, Props}
 import akka.io.IO
-import spray.can.Http
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.duration._
+import com.example.MyServiceActor
 import com.example.configuracion.AppConf
+import spray.can.Http
+
+import scala.concurrent.duration._
 
 object Boot extends App {
 
