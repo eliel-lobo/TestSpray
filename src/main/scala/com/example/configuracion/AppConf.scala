@@ -8,7 +8,7 @@ object AppConf {
 
   val config = ConfigFactory.load()
 
-  lazy val port: Int = Try(System.getProperty("Port").toInt).getOrElse(4242)
+  lazy val port: Int = Try(System.getProperty("Port").toInt).getOrElse(5353)
 
   lazy val bdActiva: String = Try(System.getProperty("bd.activa").toString).getOrElse(
     Try(config.getString("bd.activa")).getOrElse("h2"))
